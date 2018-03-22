@@ -41,14 +41,14 @@ describe('ThreadsService', () => {
         console.log(`=> threads (${threads.length}): ${threadNames} `);
       });
     
-      // messagesService.addMessage(m1);
-      // messagesService.addMessage(m2);
-      // messagesService.addMessage(m3);
+      messagesService.addMessage(m1);
+      messagesService.addMessage(m2);
+      messagesService.addMessage(m3);
 
-      // threadsService.orderedThreads
-      //   .subscribe( (threads: Thread[]) => {
-      //     console.log('en el test ', _.values(threads));
-      //   })
+      threadsService.orderedThreads
+        .subscribe( (threads: Thread[]) => {
+          console.log('en el test ', _.values(threads));
+        })
 
   });
 });
