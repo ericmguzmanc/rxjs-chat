@@ -67,4 +67,4 @@ export class ThreadsService {
     this.currentThread.next(newThread);
   }
 
-}
+};
