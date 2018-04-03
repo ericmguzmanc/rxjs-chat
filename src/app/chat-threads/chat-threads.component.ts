@@ -20,6 +20,7 @@ export class ChatThreadsComponent implements OnInit {
   }
 
   ngOnInit() {
+    console.log(this.threads);
   }
 
 }

@@ -20,7 +20,8 @@ export class ChatThreadComponent implements OnInit {
 
   constructor(public threadsService: ThreadsService) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
+    console.log(this.thread);
     this.threadsService.currentThread
       .subscribe( (currentThread: Thread) => {
         this.selected = currentThread &&
